@@ -48,9 +48,7 @@ nav{
 	position: fixed;
 	width: 100%;
 }
-.logo{
-	
-}
+
 .logo img{
 	width: 75%;
 }
@@ -216,7 +214,7 @@ button{
 	top: 0;
 	left: 0;
 	right: 0;
-	bottom: 0;
+	bottom: 3px;
 	color: white;
 	display: none;
 	justify-content: center;
@@ -234,7 +232,7 @@ button{
 	border-bottom: 9px solid red;
 }
 .trow .col img{
-	width: 100%;
+	width: 101%;
 }
 .trow .col img:hover + .over{
 	display: block;
@@ -258,12 +256,18 @@ button{
 	left: 0;
 	right: 0;
 }
+.trow .col .over .social1 a{
+	color: #fff;
+	padding: 0 8px;
+
+}
 
 .contact{
 	background: url("images/contact.png");
 	overflow: hidden;
 	position: relative;
 	z-index: 1;
+	
 }
 .contact::after{
 	content: "";
@@ -303,4 +307,66 @@ form input::placeholder,
 form textarea::placeholder{
 	color: white;
 }
+.filter{
+	text-align: center;
+}
+.filter ul {
+	display: flex;
+	list-style: none;
+	margin: 10px 0;
+	padding: 0;
+	justify-content: center;
+}
+.filter ul a{
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 0px 10px;
+}
 
+.brow{
+	display: flex;
+}
+.brow .col{
+	width: 31.33%;
+	margin: 1%;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+.brow .col img{
+	width: 100%;
+}
+.brow .col h3, p, small{
+	padding: 10px;
+}
+.brow button{
+	background-color: black;
+	border-radius: 5px;
+}
+.btn {
+    width: 36%;
+    margin: auto;
+    padding-bottom: 18px;
+}
+form .btn {
+    margin-left: 14px;
+    margin-top: 11px;
+}
+.footer{
+	background: black;
+	padding: 30px 0px;
+}
+.social-icon{
+	color: #fff;
+	margin-top: 27px;
+}
+.social-icon i{
+	padding: 0px 8px;
+}
+.copy{
+	color: #fff;
+}
+.footer-item{
+	display: flex;
+	justify-content: space-between;
+}
