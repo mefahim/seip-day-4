@@ -1,0 +1,306 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	/*font-family: 'Raleway', sans-serif;*/
+}
+.container{
+	padding: 0 10%;
+}
+header{
+	background: url("images/head.png");
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+	height: 80vh;
+}
+header::after{
+	content: "";
+	clear: both;
+	display: block;
+
+	background: rgba(0, 0, 0, .5);
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+}
+h1 span{
+	color: #fe320a;
+}
+.description{
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+nav{
+	z-index: 999;
+	background: rgba(0, 0, 0, .4);
+	display: flex;
+	flex-direction: row;
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+	position: fixed;
+	width: 100%;
+}
+.logo{
+	
+}
+.logo img{
+	width: 75%;
+}
+.menu{
+	width: 75%;
+}
+.menu ul{
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	justify-content: flex-end;
+}
+.menu ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 20px 5px;
+	display: inline-block;
+}
+
+button{
+	background: #fe320a;
+	padding: 10px 15px;
+	border: none;
+	color: white;
+}
+.section-head{
+	width: 15%;
+	margin: auto;
+	text-align: center;
+}
+.section-head h3{
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	position: relative;
+}
+.section-head h3::after{
+	content: "";
+	clear: both;
+	display: block;
+
+	height: 8px;
+	width: 8px;
+	border-radius: 50%;
+	background: #fe320a;
+
+	position: absolute;
+	bottom: -15px;
+	right: 50%;
+}
+.section-head hr{
+	width: 65%;
+	border: none;
+	height: 2px;
+	background: #fe320a;
+	margin-top: 0;
+}
+.color{
+	color: #fe320a;
+}
+.about{
+	display: flex;
+}
+.photo{
+	width: 34%;
+	margin: 0 1%;
+	position: relative;
+	color: white;
+}
+.photo img{
+	width: 100%;
+
+}
+.social{
+	background: rgba(0, 0, 0, .5);
+	position: absolute;
+	bottom: 3px;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+.social a{
+	color: white;
+	padding: 8px;
+	background: rgba(0, 0, 0, .6);
+	border-radius: 50%;
+	display: inline-block;
+	transition: 1s;
+	margin-bottom: 5px;
+}
+.social a:hover{
+	background: white;
+	color: black;
+}
+.info{
+	width: 64%;
+	margin: 0 1%;
+}
+.row{
+	display: flex;
+}
+.row .col{
+	width: 31.33%;
+	margin: 2% 1%;
+	text-align: center;
+}
+.skill{
+	display: flex;
+}
+.skill .left,
+.skill .right{
+	width: 48%;
+	margin: 1%;
+}
+.skill .right .out{
+	height: 16px;
+	border-radius: 8px;
+	background: rgba(0, 0, 0, .8);
+	position: relative;
+	text-align: right;
+	color: white;
+	font-size: 13px;
+	padding-right: 5px;
+}
+.skill .right .in1,
+.skill .right .in2,
+.skill .right .in3
+{
+	height: 8px;
+	border-radius: 4px;
+	background: rgba(255, 0, 0, .8);
+	position: absolute;
+	left: 5px;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+.skill .right .in1{
+	width: 60%;
+}
+.skill .right .in2{
+	width: 80%;
+}
+.skill .right .in3{
+	width: 90%;
+}
+.prow{
+	display: flex;
+}
+.prow .col{
+	width: 31.33%;
+	margin: 1%;
+	position: relative;
+}
+.prow .col img{
+	width: 100%;
+}
+.prow .col img:hover + .over{
+	display: flex;
+}
+.prow .col .over{
+	background: rgba(255, 0, 0, .5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	color: white;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+	cursor: pointer;
+}
+.trow{
+	display: flex;
+}
+.trow .col{
+	width: 23%;
+	margin: 1%;
+	position: relative;
+	border-bottom: 9px solid red;
+}
+.trow .col img{
+	width: 100%;
+}
+.trow .col img:hover + .over{
+	display: block;
+}
+.trow .col .over{
+	background: rgba(255, 0, 0, .5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: none;
+}
+.trow .col .over .social1{
+	text-align: center;
+	color: white;
+	background: rgba(255, 0, 0, .5);
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.contact{
+	background: url("images/contact.png");
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+}
+.contact::after{
+	content: "";
+	clear: both;
+	display: block;
+
+	background: rgba(0, 0, 0, .5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+}
+form input{
+	width: 45%;
+	margin: 1%;
+	border: 1px solid white;
+	border-radius: 5px;
+	background: transparent;
+	padding:12px;
+	color: white;
+	outline: none;
+}
+form textarea{
+	width: 96%;
+	margin: 1%;
+	border: 1px solid white;
+	border-radius: 5px;
+	background: transparent;
+	padding: 8px 12px;
+	color: white;
+	box-shadow: 1px 1px 10px white;
+	outline: none;
+}
+form input::placeholder,
+form textarea::placeholder{
+	color: white;
+}
+
