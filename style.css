@@ -370,3 +370,119 @@ form .btn {
 	display: flex;
 	justify-content: space-between;
 }
+
+/* media quary */
+@media all and (max-width: 768px) {
+	nav{
+		display: block;
+		
+	}
+	.menu ul {
+		display: flex;
+		list-style: none;
+		margin: 15px;
+		padding: 0;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	  }
+	header {
+		background: url("images/head.png");
+		  background-size: auto;
+		background-size: cover;
+		position: relative;
+		z-index: 1;
+		height: 50vh;
+	  }
+	.logo img {
+		width: 100px;
+		margin: 0px 32%;
+	  }
+	  .description {
+		height: 585px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		width: 600px;
+		font-size: 15px;
+	  }
+	  .about {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 25px;
+	  }
+	  .photo{
+		width: 100%;
+	  }
+	  .info{
+		width: 100%;
+		text-align: center;
+	  }
+	  .section-head {
+		width: 50%;
+	  }
+	  .row {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 25px;
+	  }
+	  .row .col {
+		width: 100%;
+		margin: 2% 1%;
+		text-align: center;
+	  }
+	  .skill {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	  }
+	  .skill .left, .skill .right {
+		width: 100%;
+		margin: 1%;
+		text-align: center;
+	  }
+	  .prow {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	  }
+	  .prow .col {
+		width: 100%;
+		margin: 1%;
+		position: relative;
+	  }
+	  .trow {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	  }
+	  .trow .col {
+		width: 100%;
+		margin: 10px 0px;
+		position: relative;
+		border-bottom: 9px solid red;
+	  }
+	  .brow {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	  }
+	  .brow .col {
+		width: 100%;
+		margin: 1%;
+		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	  }
+	  .brow {
+		text-align: center;
+	  }
+	  form input{
+		width: 100%;
+	  }
+	  form textarea{
+		width: 100% !important;
+	  }
+}
